@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="./lib/comfy.min.js"></script>
+		<script src="./lib/handleDCF.js" type="module"></script>
+		<script src="./lib/initComfy.js" type="module"></script>
+
+		<script src="./src/credentials.js" type="module"></script>
+		<script defer src="./src/main.js" type="module"></script>
+		<title>Twitch Auth Widget</title>
+	</head>
+	<body>
+		<button id="clear-localstorage">Clear localstorage</button>
+		<script>
+			document
+				.getElementById("clear-localstorage")
+				.addEventListener("click", async (e) => {
+					localStorage.clear();
+					location.reload();
+				});
+		</script>
+	</body>
+</html>
