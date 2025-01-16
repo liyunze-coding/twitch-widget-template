@@ -1,5 +1,9 @@
 # Twitch Widget Vanilla Template
 
+Twitch Widget template in vanilla HTML, CSS and JS. 
+
+Uses [Device Code Grant Flow](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/#device-code-grant-flow) authorization method and [ComfyJS](https://github.com/instafluff/comfyjs) library.
+
 ![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=for-the-badge)
 ![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=for-the-badge)
 ![CSS Badge](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff&style=for-the-badge)
@@ -51,7 +55,10 @@ export default credentials;
   - If client ID is missing, refer to step 2-3
   - You should see activation link
   - Copy it and paste it on your browser's URL search bar (Chrome, Firefox, Opera etc.)
-  - Activate and authorize
+  - Click on `Activate`
+  - Click on `Authorize`
+    - Authorize using your alt account (acting as a bot) is preferred, otherwise streaming account works fine
+    - Whichever account you authorize with is the account that will send chat messages
   - Interact with browser widget, click on blue button `Click here after authorizing`
 
 ## Opportunities to Contribute
@@ -62,3 +69,8 @@ export default credentials;
   - [ ] BetterTTV
 - [ ] PubSub from alternate accounts (Different setup method required?)
 
+# Contributors
+
+- Template is mainly developed by [RythonDev](https://twitch.tv/RythonDev)
+- ComfyJS by [Instafluff](https://github.com/instafluff/comfyjs)
+- Tmi.js by [AlcaDesign](https://github.com/AlcaDesign)
