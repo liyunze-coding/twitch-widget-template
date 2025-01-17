@@ -8,6 +8,34 @@ Uses [Device Code Grant Flow](https://dev.twitch.tv/docs/authentication/getting-
 ![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=for-the-badge)
 ![CSS Badge](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff&style=for-the-badge)
 
+## What do I use this for?
+
+Want to start developing your own widget easily? Use this template.
+
+- No backend
+- Interactive in chat
+- Easy to use [ComfyJS](https://github.com/instafluff/comfyjs) library
+- Doesn't use third party Twitch token generators
+
+### Forked ComfyJS
+
+This widget template is using a [forked version of ComfyJS](https://github.com/liyunze-coding/ComfyJS) (by [RythonDev](https://twitch.tv/RythonDev)).
+
+Extra functionalities:
+
+Reply Command:
+```js
+ComfyJS.Reply("MESSAGE PARENT ID", "MESSAGE", "CHANNEL (optional)")
+```
+
+OnCommand works when you're replying to someone, rather than getting processed by OnChat:
+`user: @mention !command message`
+```js
+ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
+  // @mention is ignored
+}
+```
+
 ## Instructions
 
 1. Install the Widget
@@ -36,7 +64,7 @@ Uses [Device Code Grant Flow](https://dev.twitch.tv/docs/authentication/getting-
 const credentials = {
 	clientId: "CLIENT_ID_HERE",
 	scopes: "chat:read chat:edit channel:read:redemptions user:read:email",
-	channel: ["YOUR STREAMING CHANNEL"], // your main channel
+	channel: ["YOUR STREAMING CHANNELS","OTHER STREAMING CHANNELS IF NEEDED"], // your main channel
 	sender: "YOUR BOT USERNAME / STREAMING CHANNEL", // bot username
 };
 
@@ -61,6 +89,12 @@ export default credentials;
     - Whichever account you authorize with is the account that will send chat messages
   - Interact with browser widget, click on blue button `Click here after authorizing`
 
+## How does it work?
+
+Uses [Device Code Grant Flow](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/#device-code-grant-flow) authorization method, [ComfyJS](https://github.com/instafluff/comfyjs) library is used to integrate with Twitch Chat via IRC.
+
+Access token, refresh token and scopes are stored in localstorage. Tokens are refreshed every time the widget is activated.
+
 ## Opportunities to Contribute
 
 - [ ] Third Party Emotes Integrations
@@ -71,6 +105,6 @@ export default credentials;
 
 # Contributors
 
-- Template is mainly developed by [RythonDev](https://twitch.tv/RythonDev)
+- Template mainly developed by [RythonDev](https://twitch.tv/RythonDev)
 - ComfyJS by [Instafluff](https://github.com/instafluff/comfyjs)
 - Tmi.js by [AlcaDesign](https://github.com/AlcaDesign)
