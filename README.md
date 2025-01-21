@@ -17,25 +17,6 @@ Want to start developing your own widget easily? Use this template.
 - Easy to use [ComfyJS](https://github.com/instafluff/comfyjs) library
 - Doesn't use third party Twitch token generators
 
-### Forked ComfyJS
-
-This widget template is using a [forked version of ComfyJS](https://github.com/liyunze-coding/ComfyJS) (by [RythonDev](https://twitch.tv/RythonDev)).
-
-Extra functionalities:
-
-Reply Command:
-```js
-ComfyJS.Reply("MESSAGE PARENT ID", "MESSAGE", "CHANNEL (optional)")
-```
-
-OnCommand works when you're replying to someone, rather than getting processed by OnChat:
-`user: @mention !command message`
-```js
-ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
-  // @mention is ignored
-}
-```
-
 ## Instructions
 
 1. Install the Widget
