@@ -19,6 +19,8 @@ Want to start developing your own widget easily? Use this template.
 
 ## Instructions
 
+VIDEO: https://youtu.be/nX4ib4bxubc
+
 1. Install the Widget
 
 - Option 1:
