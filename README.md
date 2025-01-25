@@ -41,7 +41,7 @@ VIDEO: https://youtu.be/nX4ib4bxubc
   - Manage the new application
   - Obtain Client ID
 
-3. Modify details in `src/credentials.js`:
+3. Modify details in `credentials.js`:
 
 ```js
 const credentials = {
