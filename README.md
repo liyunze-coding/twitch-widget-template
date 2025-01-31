@@ -47,8 +47,8 @@ VIDEO: https://youtu.be/nX4ib4bxubc
 const credentials = {
 	clientId: "CLIENT_ID_HERE",
 	scopes: "chat:read chat:edit channel:read:redemptions user:read:email",
-	channel: ["YOUR STREAMING CHANNELS","OTHER STREAMING CHANNELS IF NEEDED"], // your main channel
-	sender: "YOUR BOT USERNAME / STREAMING CHANNEL", // bot username
+	channel: ["your streaming channel","other streaming channels if needed"], // your main channel
+	sender: "your bot username / streaming channel username", // bot username
 };
 
 export default credentials;
@@ -84,7 +84,6 @@ Access token, refresh token and scopes are stored in localstorage. Tokens are re
   - [ ] 7TV
   - [ ] FrankerFaceZ
   - [ ] BetterTTV
-- [ ] PubSub from alternate accounts (Different setup method required?)
 
 # Contributors
 
