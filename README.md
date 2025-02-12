@@ -1,4 +1,4 @@
-# Twitch Widget Vanilla Template
+# Twitch Widget Vanilla Template (Alpha)
 
 Twitch Widget template in vanilla HTML, CSS and JS. 
 
@@ -80,6 +80,7 @@ Access token, refresh token and scopes are stored in localstorage. Tokens are re
 
 ## Opportunities to Contribute
 
+- [ ] Fix bug where authorization step failed
 - [ ] Third Party Emotes Integrations
   - [ ] 7TV
   - [ ] FrankerFaceZ
