@@ -88,6 +88,6 @@ Access token, refresh token and scopes are stored in localstorage. Tokens are re
 
 # Contributors
 
-- Template mainly developed by [RythonDev](https://twitch.tv/RythonDev)
+- Template developed by [RythonDev](https://twitch.tv/RythonDev)
 - ComfyJS by [Instafluff](https://github.com/instafluff/comfyjs)
 - Tmi.js by [AlcaDesign](https://github.com/AlcaDesign)
